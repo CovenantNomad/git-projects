@@ -13,6 +13,7 @@ function App() {
       <TodoTemplate>
         <TodoHeader />
         <TodoList />
+        <TodoCreate />
       </TodoTemplate>
     </RecoilRoot>
   );
