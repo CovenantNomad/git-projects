@@ -3,9 +3,9 @@ import { RecoilRoot } from 'recoil'
 import TodoTemplate from "./components/TodoTemplate";
 import TodoList from "./components/TodoList";
 import TodoHeader from "./components/TodoHeader";
+import TodoCreate from "./components/TodoCreate";
 
 function App() {
-  let att
 
   return (
     <RecoilRoot>
