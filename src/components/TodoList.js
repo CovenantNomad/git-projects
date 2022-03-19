@@ -2,13 +2,14 @@ import React from 'react';
 import { useRecoilValue } from 'recoil';
 import styled from 'styled-components';
 import { filteredTodoListState } from '../store/todoStore';
+import TodoItem from './TodoItem';
 
 const TodoList = () => {
   const todoList = useRecoilValue(filteredTodoListState)
 
   return (
     <Container>
-      {todoList.map(todoItem => <div>{todoItem.text}</div>)}
+      {todoList.map(todo => <TodoItem key={todo.id} id={todo.id} text={todo.text} done={todo.done} />)}
     </Container>
   );
 }
