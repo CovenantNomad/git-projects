@@ -8,6 +8,7 @@ function App() {
     <RecoilRoot>
       <GlobalStyle />
       <TodoTemplate>
+        <TodoCreate />
         <TodoList />
       </TodoTemplate>
     </RecoilRoot>
